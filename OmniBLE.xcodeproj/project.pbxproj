@@ -69,6 +69,9 @@
 		10389A4126FF7841002115E9 /* MessageTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10389A2226FF7841002115E9 /* MessageTransport.swift */; };
 		196A6F232AFFFD1700E3C089 /* SilencePodPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A6F222AFFFD1200E3C089 /* SilencePodPreference.swift */; };
 		2742C7052AD875B100E67833 /* SlideButton in Frameworks */ = {isa = PBXBuildFile; productRef = 2742C7042AD875B100E67833 /* SlideButton */; };
+		3B3B66EF2D8EF95800210B16 /* OmniBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84752E8226ED0FFE009FD801 /* OmniBLE.framework */; };
+		3B3B66F52D8EF96400210B16 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3B66F42D8EF96400210B16 /* CryptoSwift */; };
+		3B3B66F72D8EF96C00210B16 /* SlideButton in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3B66F62D8EF96C00210B16 /* SlideButton */; };
 		4B67E2D5289B4EDB002D92AF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B67E2D3289B4EDB002D92AF /* Localizable.strings */; };
 		84752E9326ED0FFE009FD801 /* OmniBLE.h in Headers */ = {isa = PBXBuildFile; fileRef = 84752E8526ED0FFE009FD801 /* OmniBLE.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84752ED626ED13F5009FD801 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84752EBF26ED13F5009FD801 /* Id.swift */; };
@@ -224,6 +227,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B3B66F12D8EF95800210B16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84752E7926ED0FFE009FD801 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84752E8126ED0FFE009FD801;
+			remoteInfo = OmniBLE;
+		};
 		84752E8D26ED0FFE009FD801 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84752E7926ED0FFE009FD801 /* Project object */;
@@ -486,6 +496,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3B66F72D8EF96C00210B16 /* SlideButton in Frameworks */,
+				3B3B66EF2D8EF95800210B16 /* OmniBLE.framework in Frameworks */,
+				3B3B66F52D8EF96400210B16 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +976,7 @@
 			);
 			dependencies = (
 				84752E8E26ED0FFE009FD801 /* PBXTargetDependency */,
+				3B3B66F22D8EF95800210B16 /* PBXTargetDependency */,
 			);
 			name = OmniBLETests;
 			productName = OmniBLETests;
@@ -1348,6 +1362,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3B3B66F22D8EF95800210B16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84752E8126ED0FFE009FD801 /* OmniBLE */;
+			targetProxy = 3B3B66F12D8EF95800210B16 /* PBXContainerItemProxy */;
+		};
 		84752E8E26ED0FFE009FD801 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84752E8126ED0FFE009FD801 /* OmniBLE */;
@@ -1626,7 +1645,6 @@
 		84752E9A26ED0FFE009FD801 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = OmniBLETests/Info.plist;
@@ -1648,7 +1666,6 @@
 		84752E9B26ED0FFE009FD801 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = OmniBLETests/Info.plist;
@@ -1836,6 +1853,16 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		2742C7042AD875B100E67833 /* SlideButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2742C7032AD875B100E67833 /* XCRemoteSwiftPackageReference "SlideButton" */;
+			productName = SlideButton;
+		};
+		3B3B66F42D8EF96400210B16 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8475306C26ED15DE009FD801 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		3B3B66F62D8EF96C00210B16 /* SlideButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2742C7032AD875B100E67833 /* XCRemoteSwiftPackageReference "SlideButton" */;
 			productName = SlideButton;
